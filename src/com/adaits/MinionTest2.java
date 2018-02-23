@@ -27,7 +27,7 @@ class minionTest2 {
 
     @Test
     void probarSonIguales(){
-        assertSame(minion1,minion3);
+        assertEquals(minion1,minion3);
     }
 
 
@@ -36,8 +36,8 @@ class minionTest2 {
         minions[0] = minion1;
         minions[1] = minion2;
 
-        minions2[0] = minion3;
-        minions2[1] = minion4;
+        minions2[0] = minion1;
+        minions2[1] = minion2;
 
         assertArrayEquals(minions,minions2);
     }

@@ -21,7 +21,7 @@ class MinionTest {
         minions[4] = new Minion("Jorge",17);
         minions[5] = new Minion("Tim",18);
         minions[6] = new Minion("Mark",19);
-        minions[7] = new Minion("Phil",Integer.MIN_VALUE -1);
+        minions[7] = new Minion("Phil",Integer.MIN_VALUE -1);//O CAMBIAR ESTO
         minions[8] = new Minion("Kevin",Integer.MAX_VALUE+1);
     }
 
@@ -45,7 +45,7 @@ class MinionTest {
 
 
     @Test
-    void probarEsUnVillano(){
+    void probarEsUnVillano1(){
         assertTrue(minionProbar.esUnVillano());
     }
 
@@ -78,11 +78,11 @@ class MinionTest {
     }
     @Test
     void probarEsUnVillano8(){
-        assertFalse(minionProbar.esUnVillano());
+        assertTrue(minionProbar.esUnVillano());
     }
     @Test
     void probarEsUnVillano9(){
-        assertTrue(minionProbar.esUnVillano());
+        assertFalse(minionProbar.esUnVillano());
     }
 
 
