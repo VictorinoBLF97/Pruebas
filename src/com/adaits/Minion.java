@@ -12,26 +12,21 @@ public class Minion {
 
 
     //Crear propiedad para gestionar palabra favorita
-
-        //    public String palabraFav(){
-        //
-        //    }
     //Crear propiedad para los numeros de ojos
-        //    public int nOjos(){
-        //
-        //    }
     //Crear propiedad de si lleva gafas o no
-        //    public boolean llevaGafas(){
-        //
-        //    }
     //Crear propiedad de habilidades
     //Crear Clase Jefe y asociarla a un minion, tener en cuenta que un jefe puede tener varios minions
     //Pero los minions solo obedecen a un jefe
 
-    public Minion(String nombre, int crimenes) {
-        this.nombre = nombre;
-        this.crimenes = crimenes;
+    public Minion(int ojos, boolean gafas) {
+        this.ojos = ojos;
+        this.gafas = gafas;
     }
+
+    //    public Minion(String nombre, int crimenes) {
+    //        this.nombre = nombre;
+    //        this.crimenes = crimenes;
+    //    }
 
     @Override
     public String toString() {
@@ -78,6 +73,12 @@ public class Minion {
     }
 
     //Crear una funcion que obtengan todos los minions con mas de un ojo y sin gafas
+    public Minion ojoSinGafa(){
+
+    }
+
+
+
 
 
     //Crear una función que obtenga todos los minions con más de una habilidad
